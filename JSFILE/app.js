@@ -10,6 +10,10 @@ closeMenu.addEventListener("click", () => {
 });
 
 
+
+
+// ==============faq============== 
+
  const accFour = document.querySelectorAll('.acc-four-content');
 
 accFour.forEach( accs => {
