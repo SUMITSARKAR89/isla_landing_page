@@ -8,3 +8,12 @@ openMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   navigation.style.top = "-100%"
 });
+
+
+ const accFour = document.querySelectorAll('.acc-four-content');
+
+accFour.forEach( accs => {
+    accs.addEventListener("click", () => {
+        accs.classList.toggle("active");
+    })
+});

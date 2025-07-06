@@ -670,7 +670,8 @@
     #service,
     #about,
     #comment,
-    #location{
+    #location,
+    #faq{
       max-width: 100%;
       
     }
@@ -1014,6 +1015,7 @@
         border-radius: 10px;
       
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1031,7 +1033,7 @@
          border-bottom: 1px solid var(--blk-color);
          color: var(--blk-color);
          animation: on-off 5s linear infinite;
-         z-index: 10;
+         z-index: 9;
       }
       @keyframes on-off{
         0%,100%{
@@ -1070,12 +1072,269 @@
            
           transform: rotate(180deg);
         }
-    
 
-    
+   /* =====================logo slider-section=================  */
+   .service-logo-slider{
+    margin-top: 5%;
+    max-width: 100%;
+    position: relative;
+    background: #fafafa;
+    padding: 1% 0;
+    border-radius: 40px;
+ }
 
+ .service-logo-one{
+    margin: 10px 0;
+      transition: var(--transition-1);
+ }
+ .service-logo-container{
+     max-width: 100%;
+    display: flex;
+    width: 100%;
+   height: auto;
+    
+    overflow: hidden;
+  
+    
+ }
+  .service-logo-container::-webkit-scrollbar{
+    display: none;
+  
+ }
+
+ .service-logo-card{
+      width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
+    
+    flex: none;
+    animation: 35s slider infinite linear;
+  
+ }
    
+  
+ 
+.service-logo-card .logo-body{
+    max-width: 100%; 
+    width: 80%;   
+    padding: 12px 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1px;
+    transition: var(--transition-1);
     
+
+}
+.logo-body img{
+  width: fit-content;
+ 
+}
+ @keyframes slider{
+   from{
+       transform: translateX(0);
+   }
+   to{
+       transform: translateX(-100%);
+   }
+   
+}
+
+ .service-logo-slider::after,
+ .service-logo-slider::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+    }
+  
+     .service-logo-slider::before {
+  left: 0;
+  background: linear-gradient(to right, #fafafa, transparent);
+}
+
+
+ .service-logo-slider::after {
+  right: 0;
+  background: linear-gradient(to left, #fafafa, transparent);
+}
+   /* ==============================faq======================== */
+#faq .h2{
+  text-align: center;
+  margin-top: 5%;
+}
+#faq{
+  margin-bottom: 10%;
+  background: var(--gradient-3);
+  border-radius: 20px;
+}
+.acc-four-container{
+    max-width: 100%;
+    width: 100%;
+    margin:  0 auto;
+    display: flex;
+    gap: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px 20px;
+    height: auto;
+    transition: var(--transition-1);
+}
+.acc-four-content{
+    max-width: 100%;
+    margin:  0;
+    padding: 20px 20px ;
+    border-radius: 15px;
+    height: auto;
+    background: var(--btn-color);
+
+      
+}
+.acc-four-content .title{
+   
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
+  
+    cursor: pointer;
+    transition: 0.2s ;
+    background-color: transparent;
+   
+}
+.title i{
+  font-size: var(--font-h5);
+  opacity: 0.9;
+}
+.title .font-16{
+  text-transform: capitalize;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.acc-four-content .get-point{
+  
+  width: 95%;
+  margin-left: 7px;
+  border-radius: 1px;
+  max-width: 100%;
+  max-height: 0;
+  
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+   animation: faq 1s ease-in-out;
+  
+}
+@keyframes faq {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.get-point p{
+  padding-left: 10px;
+  color: var(--blk-color);
+  opacity: 0.8;
+  width: 90%;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  
+}
+.acc-four-content.active .get-point{
+    max-height: 400px;
+}
+
+.acc-four-content.active .fa-plus{
+    transform: rotate(90deg);
+   
+}
+.fa-plus {
+    transition: transform 0.5s ease;
+}
+
+
+ /* <!-- =================================================
+--------------footer start here------------------
+================================================= --> */
+
+footer .footer-logo{
+  max-width: 100%;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 20px;
+  font-size: var(--font-h2);
+  text-transform: uppercase;
+  color: var(--blk-color);
+  text-align: center;
+  opacity: 0.8;
+   font-family: "Aboreto", system-ui;
+}
+.footer-container{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.footer-container p{
+  line-height: 22px;
+  font-weight: 600;
+
+}
+.footer-card{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  gap: 5px;
+}
+.footer-card p{
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 8px;
+  opacity: 0.8;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.footer-card .foot-link{
+  color: var(--blk-color);
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: var(--transition-1);
+}
+ .foot-link:hover{
+  opacity: 0.8;
+  color: var(--txt-hover-color);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
     @media(max-width:1536px){
 
@@ -1086,6 +1345,10 @@
           transition: var(--transition-1);
           justify-content: center;
           align-items: center;
+         }
+         .acc-four-container{
+          flex-direction: column;
+          width: 70%;
          }
     }
 
@@ -1198,6 +1461,10 @@
           justify-content: center;
           align-items: center;
          }
+         .acc-four-container{
+         
+          width: 80%;
+         }
       
 
     }
@@ -1231,14 +1498,22 @@
         align-items: center;
         text-align: center;
       }
+      .acc-four-container{
+         
+        width: 100%;
+      }
+      .navigation-content{
+        margin-top: 18%;
+      }
 
     }
     @media(max-width:600px){
-      header .head{
+      header .head,
+      .mobile-nav{
          justify-content: space-between;
          padding: 5px 30px;
-         width: 50%;
-         height: 5vh;
+         width: 80%;
+         height: 7vh;
          transition: var(--transition-1);
       }
      
@@ -1256,6 +1531,16 @@
         width: 100%;
         text-align: center;
         padding: 0 10%;
+      }
+      header .booking-link{
+        bottom: 25%;
+         left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
       }
        .booking-link{
         bottom: 40%;
