@@ -21,3 +21,17 @@ accFour.forEach( accs => {
         accs.classList.toggle("active");
     })
 });
+
+
+
+const topScroll = document.querySelector('#top-up');
+
+window.addEventListener('scroll', () => {
+    if(window.pageYOffset > 2000){
+        topScroll.classList.add("active")
+    }else{
+        topScroll.classList.remove("active")
+    }
+});
+
+
