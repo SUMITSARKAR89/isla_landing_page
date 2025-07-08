@@ -47,6 +47,7 @@
     <!-- <link rel="stylesheet" href="swiper-bundle.min.css"> -->
 
     <!-- ---scroll reveal js ---------------------------------->
+      <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     
 
@@ -170,7 +171,7 @@
     ================================================= -->
 
 <main id="main">
-        <div id="bar"></div>
+    <div id="bar"></div>
     
     <section id="service">
         <div class="container">
@@ -456,6 +457,26 @@
 </footer>
 
     <script src="JSFILE/app.js"></script>
+    <script>
+         ScrollReveal({ 
+        //   reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay:400 
+        });
+        ScrollReveal().reveal('.booking-link, #bar, .location-card a ', { delay: 200, origin: 'bottom' });
+        ScrollReveal().reveal('.btn-blog, .location-card h2 ', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.about-card h4', { delay: 100, origin: 'right' });
+        ScrollReveal().reveal('.footer-card .foot-link', { delay: 200, origin: 'top' });
+        
+        ScrollReveal().reveal('.service-container, .service-img, .about-card a, .comment-card, .acc-four-content ', { delay: 200, origin: 'bottom', interval: 200});
+        ScrollReveal().reveal('.header-info p, .about-img', { delay: 200, origin: 'left', interval: 200});
+        ScrollReveal().reveal('h1 span, .h2, .location-card p', { delay: 400, origin: 'left', interval: 200});
+        ScrollReveal().reveal('.location-map, #schedule', { delay: 200, origin: 'right', interval: 200});
+        ScrollReveal().reveal('.about-card p', { delay: 400, origin: 'right', interval: 300});
+        ScrollReveal().reveal('#schedule img, .footer-container .font-14, .footer-card p', { delay: 300, origin: 'top', interval: 200});
+    </script>
+   
     
 </body>
 </html>

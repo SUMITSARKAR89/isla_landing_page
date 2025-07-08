@@ -295,6 +295,25 @@
 </footer>
 
     <script src="JSFILE/app.js"></script>
+     <script>
+         ScrollReveal({ 
+        //   reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay:400 
+        });
+        ScrollReveal().reveal('', { delay: 200, origin: 'bottom' });
+        ScrollReveal().reveal('#contact-hero ', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('', { delay: 100, origin: 'right' });
+        ScrollReveal().reveal('.footer-card .foot-link, h2 ', { delay: 200, origin: 'top' });
+        
+        ScrollReveal().reveal('', { delay: 200, origin: 'bottom', interval: 200});
+        ScrollReveal().reveal('.header-info p', { delay: 200, origin: 'left', interval: 200});
+        ScrollReveal().reveal('.contact-form', { delay: 400, origin: 'left', interval: 200});
+        ScrollReveal().reveal('#schedule, .contact-info', { delay: 200, origin: 'right', interval: 200});
+        ScrollReveal().reveal('', { delay: 400, origin: 'right', interval: 300});
+        ScrollReveal().reveal('#schedule img, .footer-container .font-14, .footer-card p', { delay: 300, origin: 'top', interval: 200});
+    </script>
 
     
 </body>

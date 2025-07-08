@@ -341,6 +341,26 @@
 </footer>
 
     <script src="JSFILE/app.js"></script>
+    <script>
+         ScrollReveal({ 
+        //   reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay:400 
+        });
+        ScrollReveal().reveal('.article-content, .article-btn2', { delay: 200, origin: 'bottom' });
+        ScrollReveal().reveal('', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('', { delay: 100, origin: 'right' });
+        ScrollReveal().reveal('.footer-card .foot-link, h2, .article-preiod ', { delay: 200, origin: 'top' });
+        
+        ScrollReveal().reveal('.others-link img', { delay: 200, origin: 'bottom', interval: 200});
+        ScrollReveal().reveal('.header-info p, .article-info', { delay: 200, origin: 'left', interval: 200});
+        ScrollReveal().reveal('.other-article-content h3', { delay: 400, origin: 'left', interval: 200});
+        ScrollReveal().reveal('#schedule', { delay: 200, origin: 'right', interval: 200});
+        ScrollReveal().reveal('.others-link', { delay: 400, origin: 'right', interval: 300});
+        ScrollReveal().reveal('#schedule img, .footer-container .font-14, .footer-card p', { delay: 300, origin: 'top', interval: 200});
+    </script>
+
 
     
 </body>

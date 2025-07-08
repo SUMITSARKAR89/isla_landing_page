@@ -150,6 +150,7 @@
          font-family: "Albert Sans", sans-serif;
          transition:  all 0.5s ease-in-out;
          overflow-X: hidden; 
+         overflow-y: scroll;
          animation: fadeed 0.5s ease-in-out;
      }
 
@@ -741,7 +742,7 @@
       width: 100%;
       max-width: 100%;
       margin: 0 auto;
-      height: 80vh;
+      height: 85vh;
       transition: var(--transition-1);
       overflow: hidden;
       
@@ -776,7 +777,7 @@
       background-color: var(--card-color);
       box-shadow: rgba(0, 0, 0, 0.103) 0px 5px 15px;
       width: 100%;
-      height: 200px;
+      height: 220px;
       margin-top: -25%;
       padding: 30px 35px;
       border: 1px solid #0000001c;
@@ -1372,6 +1373,7 @@ footer .footer-logo{
   }
   .contact-container{
     max-width: 100%;
+    width: 100%;
     margin: 5% 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1833,9 +1835,15 @@ form textarea::placeholder{
 .test-card:nth-child(2){
   margin-top: 50px;
   background: #fff;
+  margin-right: 4%;
+  margin-top: 1%;
 }
 .test-card:nth-child(3){
   margin-top: 80px;
+  margin-right: 3%;
+  margin-top: 2%;
+  
+
   background: var(--card-color);
 }
 .test-card h3{
@@ -1908,332 +1916,5 @@ form textarea::placeholder{
 }
     
 
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-    @media(max-width:1536px){
-
-    }
-    @media(max-width:1280px){
-       .service-container{
-          grid-template-columns: repeat(2, 1fr);
-          transition: var(--transition-1);
-          justify-content: center;
-          align-items: center;
-         }
-         .acc-four-container{
-          flex-direction: column;
-          width: 70%;
-         }
-    }
-
-    @media(max-width:1192px){
-       header .head{
-         width: 60%;
-         padding: 0px 15px;
-         height: 8vh;
-       }
-        nav{
-         gap: 15px;
-        }
-        nav a{
-         font-weight: 500;
-        }
-       
-      .header-content .header-info{
-          width: 80%;
-          transition: var(--transition-2);
-      }
-      .header-info p{
-          width: 60%;
-          transition: var(--transition-1);
-      }
-     
-      .btn-blog{
-          width: 35%;
-      }
-      .about-container,
-      .location-container{
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-
-      }
-      .about-card:nth-child(1){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-      }
-      .about-card:nth-child(1) .about-img{
-        width: 500px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .about-card:nth-child(1) .about-img2{
-        left: 40%;
-         width: 500px;
-        transform: translateX(-50%);
-
-      }
-      .h2{
-        text-align: center;
-        margin: 0 auto;
-        max-width: 100%;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-      }
-      .about-card:nth-child(2){
-        margin-top: 15%;
-        justify-content: center;
-      align-items: center;
-
-      } 
-      .comment-container{
-        grid-template-columns: repeat(2, 1fr);
-
-      }
-      .contact-container{
-        grid-template-columns: 1fr;
-      }
-      .other-container{
-        flex-direction: column;
-
-      }
-      .other-container .others-card{
-        width: 100%;
-
-      }
-      .index-container .index-left{
-          position: relative;
-          top: 0;
-          left: 0;
-          width: 100%;
-          padding: 10px 20%; 
-          transition: var(--transition-1);
-          
-      }
-     
-      .index-left h2{
-        text-align: center;
-      }
-      .index-container .index-right{
-        margin-top: 5%;
-        padding: 0 10%;
-      }
-      .index-right .choose-card{
-          width: 100%;
-          height: 100%;
-          max-width: 100%;
-          top: 0;
-          left: 0;
-         margin: 0 auto;
-          position: relative;
-          
-          
-      }
-      
-        
-        
-
-    }
-    @media(max-width:980px){
-      nav{
-         display: none;
-      }
-      header .head{
-         justify-content: space-between;
-         padding: 5px 50px;
-         width: 50%;
-         height: 7vh;
-         transition: var(--transition-1);
-      }
-       .logo img{
-         width: 35%;
-       }
-       .menu{
-         display: flex;
-       }
-       header .head:hover{
-         height: 7.5vh;
-
-
-       }
-      
-      
-        .service-container{
-          grid-template-columns: 1fr;
-          
-         }
-         .service-card .service-img{
-          height: 80%;
-         }
-         .service-container .service-card{
-          overflow: visible;
-         }
-         .comment-container .comment-card{
-          justify-content: center;
-          align-items: center;
-         }
-         .acc-four-container{
-         
-          width: 80%;
-         }
-
-      .others-link{
-        width: 80%;
-        transition: var(--transition-1);
-      }
-      .article-container{
-        margin: 4% 2%;
-      } 
-      #other-article{
-     
-      padding: 0 4%;
-    }
-    .test-card-container{
-      grid-template-columns: 1fr;
-
-    }
-    .index-right{
-    
-      height: 225vh;
-    }
-      
-
-    }
-    @media(max-width:768px){
-      .header-info p{
-          width: 70%;
-        }
-        .btn-blog{
-          width: 45%;
-         }
-        .about-card:nth-child(1) .about-img{
-        width: 400px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      .about-card:nth-child(1) .about-img2{
-        left: 40%;
-         width: 400px;
-        transform: translateX(-50%);
-
-      }
-      .about-card:nth-child(2) p{
-        text-align: center;
-
-      }
-      .comment-container{
-        grid-template-columns: 1fr;
-      }
-      .location-container .location-card{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      .acc-four-container{
-         
-        width: 100%;
-      }
-      .navigation-content{
-        margin-top: 18%;
-      }
-      .others-link{
-        width: 100%;
-       
-      }
-      #other-article{
-        padding: 0 5%;
-
-      }
-      .article-container{
-        margin: 4% 0;
-      }  
-      .other-container .others-card{
-        justify-content: center;
-        align-items: center;
-      }
-      .others-btn{
-        justify-content: center;
-        align-items: center;
-
-       }
-       .others-card h4{
-        text-align: center;
-       }
-
-    }
-    @media(max-width:600px){
-      header .head,
-      .mobile-nav{
-         justify-content: space-between;
-         padding: 5px 30px;
-         width: 80%;
-         height: 7vh;
-         transition: var(--transition-1);
-      }
-     
-      .header-content .header-info{
-        width: 100%;
-      }
-      .header-info h1{
-        justify-content: center;
-        align-items: center;
-      }
-      .header-content{
-        padding: 0;
-      }
-      .header-info p{
-        width: 100%;
-        text-align: center;
-        padding: 0 10%;
-      }
-      header .booking-link{
-        bottom: 25%;
-         left: 50%;
-        transform: translateX(-50%);
-        width: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-       .booking-link{
-        bottom: 40%;
-        
-        
-        left: 50%;
-        transform: translateX(-50%);
-       }
-       .navigation-content{
-        justify-content: center;
-        align-items: center;
-       }
-       .btn-blog{
-          width: 60%;
-         }
-      .article-container .article-preiod{
-        justify-content: flex-start;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-      }
-       
-
-    }
+ 
